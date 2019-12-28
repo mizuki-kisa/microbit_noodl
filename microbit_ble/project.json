@@ -489,21 +489,72 @@
                                 ]
                             },
                             {
-                                "id": "f85c0bbe-10de-fa30-b1b2-910c44e7e266",
-                                "type": "Text Input",
+                                "id": "605fe153-1cbc-5c86-7a05-e4fb992177ef",
+                                "type": "Group",
+                                "label": "Group",
                                 "x": 20,
                                 "y": 568,
                                 "parameters": {
-                                    "startValue": "テキストを入力",
-                                    "fontFamily": "Arial",
-                                    "fontSize": {
-                                        "value": 32,
+                                    "sizeMode": "contentSize",
+                                    "borderRadius": 10,
+                                    "borderWidth": {
+                                        "value": 1,
+                                        "unit": "px"
+                                    },
+                                    "borderColor": "#808080",
+                                    "width": {
+                                        "value": 100,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 100,
+                                        "unit": "px"
+                                    },
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderStyle": "solid",
+                                    "marginLeft": {
+                                        "value": 11,
                                         "unit": "px"
                                     }
                                 },
                                 "ports": [],
                                 "dynamicports": [],
-                                "children": []
+                                "children": [
+                                    {
+                                        "id": "f85c0bbe-10de-fa30-b1b2-910c44e7e266",
+                                        "type": "Text Input",
+                                        "x": 20,
+                                        "y": 46,
+                                        "parameters": {
+                                            "startValue": "テキストを入力",
+                                            "fontFamily": "Arial",
+                                            "fontSize": {
+                                                "value": 24,
+                                                "unit": "px"
+                                            },
+                                            "sizeMode": "contentHeight",
+                                            "paddingTop": {
+                                                "value": 10,
+                                                "unit": "px"
+                                            },
+                                            "paddingLeft": {
+                                                "value": 10,
+                                                "unit": "px"
+                                            },
+                                            "paddingRight": {
+                                                "value": 10,
+                                                "unit": "px"
+                                            },
+                                            "paddingBottom": {
+                                                "value": 10,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
                             },
                             {
                                 "id": "b6f27990-1d8b-14fd-d038-397a7f94a2a0",
