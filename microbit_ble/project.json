@@ -494,7 +494,7 @@
                                 "x": 20,
                                 "y": 568,
                                 "parameters": {
-                                    "startValue": "AbC",
+                                    "startValue": "テキストを入力",
                                     "fontFamily": "Arial",
                                     "fontSize": {
                                         "value": 32,
