@@ -1,0 +1,609 @@
+{
+    "name": "2.0VoiceTest",
+    "components": [
+        {
+            "name": "/AccTest",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "8a0ef493-230d-cdb2-1c43-d9f7f12e266e",
+                        "fromProperty": "onClick",
+                        "toId": "82a98ee7-7a11-c3f3-69b8-8cb2b9c71c37",
+                        "toProperty": "connect"
+                    },
+                    {
+                        "fromId": "ead5d99d-9dce-6db5-2607-d8aa74154bab",
+                        "fromProperty": "onClick",
+                        "toId": "82a98ee7-7a11-c3f3-69b8-8cb2b9c71c37",
+                        "toProperty": "disconnect"
+                    },
+                    {
+                        "fromId": "82a98ee7-7a11-c3f3-69b8-8cb2b9c71c37",
+                        "fromProperty": "accX",
+                        "toId": "3a184712-e628-3bda-7373-0e6a57dee706",
+                        "toProperty": "num"
+                    },
+                    {
+                        "fromId": "82a98ee7-7a11-c3f3-69b8-8cb2b9c71c37",
+                        "fromProperty": "accY",
+                        "toId": "7fa9bc3c-b0d4-ce67-c1f3-f8019f47c5c5",
+                        "toProperty": "num"
+                    },
+                    {
+                        "fromId": "82a98ee7-7a11-c3f3-69b8-8cb2b9c71c37",
+                        "fromProperty": "accZ",
+                        "toId": "dc73b03f-1a0f-5a29-93c0-b0b8eb263234",
+                        "toProperty": "num"
+                    },
+                    {
+                        "fromId": "3a184712-e628-3bda-7373-0e6a57dee706",
+                        "fromProperty": "formatted",
+                        "toId": "37d2973c-cf2f-b422-6be2-03e026bcfdb3",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "7fa9bc3c-b0d4-ce67-c1f3-f8019f47c5c5",
+                        "fromProperty": "formatted",
+                        "toId": "adda1db3-c1c8-87f8-e69d-3e281c54fd04",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "dc73b03f-1a0f-5a29-93c0-b0b8eb263234",
+                        "fromProperty": "formatted",
+                        "toId": "94b8cadb-d73b-fc34-aeda-e777c7a86a15",
+                        "toProperty": "text"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "eacc74e7-4dce-2baf-354b-8070e2b2b872",
+                        "type": "Group",
+                        "x": 177,
+                        "y": 141.5,
+                        "parameters": {
+                            "backgroundColor": "#FFFFFF"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "45cbbc7f-bf6a-7c6c-b286-4706ee8e1bd3",
+                                "type": "Group",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "sizeMode": "contentSize",
+                                    "flexWrap": "nowrap"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "8a0ef493-230d-cdb2-1c43-d9f7f12e266e",
+                                        "type": "Circle",
+                                        "x": 217,
+                                        "y": 233.5,
+                                        "parameters": {},
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "a1bd8c9c-4bab-a341-e8af-2748a2a6dc59",
+                                        "type": "Text",
+                                        "x": 217,
+                                        "y": 315.5,
+                                        "parameters": {
+                                            "position": "absolute",
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "sizeMode": "contentSize",
+                                            "text": "接続！"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "ead5d99d-9dce-6db5-2607-d8aa74154bab",
+                                "type": "Group",
+                                "x": 197,
+                                "y": 361.5,
+                                "parameters": {
+                                    "sizeMode": "contentSize"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "6018de88-1558-4235-0940-e55ad77208ae",
+                                        "type": "Circle",
+                                        "x": 217,
+                                        "y": 443.5,
+                                        "parameters": {},
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "23941052-b006-5dfc-b7ad-626d66be6e49",
+                                        "type": "Text",
+                                        "x": 217,
+                                        "y": 489.5,
+                                        "parameters": {
+                                            "position": "absolute",
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "sizeMode": "contentSize",
+                                            "text": "切断！"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "0608c0c3-1c51-d59c-6756-c5b1349a3e99",
+                                "type": "Group",
+                                "x": 197,
+                                "y": 535.5,
+                                "parameters": {
+                                    "sizeMode": "contentHeight"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "37d2973c-cf2f-b422-6be2-03e026bcfdb3",
+                                        "type": "Text",
+                                        "x": 217,
+                                        "y": 581.5,
+                                        "parameters": {},
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "adda1db3-c1c8-87f8-e69d-3e281c54fd04",
+                                        "type": "Text",
+                                        "x": 217,
+                                        "y": 663.5,
+                                        "parameters": {},
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "94b8cadb-d73b-fc34-aeda-e777c7a86a15",
+                                        "type": "Text",
+                                        "x": 20,
+                                        "y": 210,
+                                        "parameters": {},
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "82a98ee7-7a11-c3f3-69b8-8cb2b9c71c37",
+                        "type": "Javascript2",
+                        "x": -360.66573877842086,
+                        "y": 335.7455645805029,
+                        "parameters": {
+                            "code": "    //ボタンサービス\n    const UUID_Button_Service                         = \"E95D9882251D470AA062FA1922DFA9A8\";\n    const UUID_Button_A_Service_CHARACTERISTICS       = \"E95DDA90251D470AA062FA1922DFA9A8\";\n    const UUID_Button_B_Service_CHARACTERISTICS       = \"E95DDA91251D470AA062FA1922DFA9A8\";\n    \n    var accelerometer_device;\n    var accelerometer_characteristic;\n    \n    //micro:bit BLE UUID\n    var ACCELEROMETERSERVICE_SERVICE_UUID       = 'e95d0753-251d-470a-a062-fa1922dfa9a8';\n    var ACCELEROMETERDATA_CHARACTERISTIC_UUID   = 'e95dca4b-251d-470a-a062-fa1922dfa9a8';\n    \n    var accX,accY,accZ;\n    \n    \ndefine({\n\t// The input ports of the Javascript node, name of input and type\n\tinputs:{\n\t    // ExampleInput:'number',\n\t    // Available types are 'number', 'string', 'boolean', 'color' and 'signal',\n\t    connect:'signal',\n\t    disconnect:'signal',\n\t    mySignal:\"signal\"\n\t},\n\t\n\t// The output ports of the Javascript node, name of output and type\n\toutputs:{\n\t    // ExampleOutput:'string',\n\t    accX: \"number\",\n\t    accY: \"number\",\n\t    accZ: \"number\"\n\t},\n\t\n\t// All signal inputs need their own function with the corresponding name that\n\t// will be run when a signal is received on the input.\n\tmySignal:function(inputs,outputs) {\n\t\t// ...\n\t},\n\t\n\t// This function will be called when any of the inputs have changed\n\tchange:function(inputs,outputs) {\n\t\tif(inputs.connect){\n\t\t    connect();\n\t\t}\n\t   \n\n\t\tif(inputs.disconnect){\n\t\t    disconnect();\n\t\t}\n\t\t\n\t\tthis.runNextFrame();\n\t\toutputs.accX = accX;\n\t    this.flagOutputDirty(\"accX\");\n\t    outputs.accY = accY;\n\t    this.flagOutputDirty(\"accY\");\n\t    outputs.accZ = accZ;\n\t    this.flagOutputDirty(\"accZ\");\n\t\t\n\t}\n})\n\nfunction connect() {  \n  navigator.bluetooth.requestDevice({\n    filters: [{\n      namePrefix: 'BBC micro:bit',\n    }],\n    optionalServices: [ACCELEROMETERSERVICE_SERVICE_UUID],\n    \n  })\n  .then(device => {\n    accelerometer_device = device;\n    console.log(\"device\", device);\n    return device.gatt.connect();\n  })\n  //ACCELEROMETER\n  .then(server =>{\n    console.log(\"server\", server)\n    return server.getPrimaryService(ACCELEROMETERSERVICE_SERVICE_UUID);\n  })\n  .then(service => {\n    console.log(\"service\", service)\n    return service.getCharacteristic(ACCELEROMETERDATA_CHARACTERISTIC_UUID)\n  })\n  .then(chara => {\n    console.log(\"ACCELEROMETER:\", chara)\n    console.log(\"BLE接続が完了しました。\");\n    characteristic = chara;\n    characteristic.startNotifications();\n    characteristic.addEventListener('characteristicvaluechanged',onAccelerometerValueChanged);\n    characteristic.writeValue(value);\n  })  \n  .catch(error => {\n    console.log(\"BLE接続に失敗しました。もう一度試してみてください\");\n    console.log(error);\n  });    \n}\n\nfunction onAccelerometerValueChanged(event) {\n    AcceleratorX = event.target.value.getUint16(0)/1000.0;\n    console.log('x:' + AcceleratorX);\n    // document.js.x.value = AcceleratorX;\n    accX = AcceleratorX;\n    \n    AcceleratorY = event.target.value.getUint16(2)/1000.0;\n    console.log('y:' + AcceleratorY);\n    // document.js.y.value = AcceleratorY;\n    accY = AcceleratorY;\n\n    AcceleratorZ = event.target.value.getUint16(4)/1000.0;\n    console.log('z:' + AcceleratorZ);\n    // document.js.z.value = AcceleratorZ;\n    accZ = AcceleratorZ;\n} \n\nfunction disconnect() {\n  if (!accelerometer_device || !accelerometer_device.gatt.connected) return ;\n  accelerometer_device.gatt.disconnect();\n  console.log(\"BLE接続を切断しました。\")\n}\n\n\n",
+                            "useExternalFile": "no"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "connect",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 2
+                            },
+                            {
+                                "name": "disconnect",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 3
+                            },
+                            {
+                                "name": "mySignal",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 4
+                            },
+                            {
+                                "name": "accX",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 5
+                            },
+                            {
+                                "name": "accY",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 6
+                            },
+                            {
+                                "name": "accZ",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 7
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "3a184712-e628-3bda-7373-0e6a57dee706",
+                        "type": "String Format",
+                        "x": -69.15709317720268,
+                        "y": 434.8391981615949,
+                        "parameters": {
+                            "format": "X: {num}"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "num",
+                                "type": "string",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "7fa9bc3c-b0d4-ce67-c1f3-f8019f47c5c5",
+                        "type": "String Format",
+                        "x": -64.25051124316917,
+                        "y": 544.5887508047601,
+                        "parameters": {
+                            "format": "Y: {num}"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "num",
+                                "type": "string",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "dc73b03f-1a0f-5a29-93c0-b0b8eb263234",
+                        "type": "String Format",
+                        "x": -57.78377410233827,
+                        "y": 685.7090880665503,
+                        "parameters": {
+                            "format": "Z: {num}"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "num",
+                                "type": "string",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/UARTtest",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "eac73e25-5d94-4ea5-3bc9-8775921e8ef9",
+                        "fromProperty": "onClick",
+                        "toId": "e319f7ba-b70f-9a61-2387-8ba11112dc29",
+                        "toProperty": "connect"
+                    },
+                    {
+                        "fromId": "01975399-ddfb-bba8-6167-990ff925327d",
+                        "fromProperty": "onClick",
+                        "toId": "e319f7ba-b70f-9a61-2387-8ba11112dc29",
+                        "toProperty": "disconnect"
+                    },
+                    {
+                        "fromId": "193d8ba5-72ab-80ad-ebfa-0e5b755d8ef4",
+                        "fromProperty": "onClick",
+                        "toId": "e319f7ba-b70f-9a61-2387-8ba11112dc29",
+                        "toProperty": "mySignal"
+                    },
+                    {
+                        "fromId": "f85c0bbe-10de-fa30-b1b2-910c44e7e266",
+                        "fromProperty": "onTextChanged",
+                        "toId": "e319f7ba-b70f-9a61-2387-8ba11112dc29",
+                        "toProperty": "msg"
+                    },
+                    {
+                        "fromId": "e319f7ba-b70f-9a61-2387-8ba11112dc29",
+                        "fromProperty": "btn",
+                        "toId": "b6f27990-1d8b-14fd-d038-397a7f94a2a0",
+                        "toProperty": "text"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "ffd194ce-fd17-f911-30f4-d64877c83423",
+                        "type": "Group",
+                        "x": 630.3323448569972,
+                        "y": 416,
+                        "parameters": {
+                            "backgroundColor": "#FFFFFF"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "7338c7b3-35c0-b09b-a339-7d253cdb22cf",
+                                "type": "Group",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "sizeMode": "contentSize"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "eac73e25-5d94-4ea5-3bc9-8775921e8ef9",
+                                        "type": "Circle",
+                                        "x": 20,
+                                        "y": 46,
+                                        "parameters": {
+                                            "fillColor": "#2BA658"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "99bba29f-0fd2-69ea-db4f-1a0c9a4cc7ce",
+                                        "type": "Text",
+                                        "x": 20,
+                                        "y": 128,
+                                        "parameters": {
+                                            "position": "absolute",
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "sizeMode": "contentSize",
+                                            "text": "Bluetooth\n接続！"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "01975399-ddfb-bba8-6167-990ff925327d",
+                                "type": "Group",
+                                "x": 20,
+                                "y": 220,
+                                "parameters": {
+                                    "sizeMode": "contentSize"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "f9736a3c-367d-c2e4-3e56-117b756e931f",
+                                        "type": "Circle",
+                                        "x": 20,
+                                        "y": 82,
+                                        "parameters": {
+                                            "fillColor": "#E8423A"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "0f5adddb-c898-4477-e8e3-356192efa21d",
+                                        "type": "Text",
+                                        "x": 217,
+                                        "y": 489.5,
+                                        "parameters": {
+                                            "position": "absolute",
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "sizeMode": "contentSize",
+                                            "text": "切断！"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "193d8ba5-72ab-80ad-ebfa-0e5b755d8ef4",
+                                "type": "Group",
+                                "x": 20,
+                                "y": 394,
+                                "parameters": {
+                                    "sizeMode": "contentSize"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "e5b0d727-77db-607d-b588-c0d7c9a95fb8",
+                                        "type": "Circle",
+                                        "x": 20,
+                                        "y": 82,
+                                        "parameters": {
+                                            "fillColor": "#D135F0"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "a16f16a7-48c6-7084-27a2-fdfbbb090a78",
+                                        "type": "Text",
+                                        "x": 217,
+                                        "y": 919.5,
+                                        "parameters": {
+                                            "position": "absolute",
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "sizeMode": "contentSize",
+                                            "text": "送る"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "f85c0bbe-10de-fa30-b1b2-910c44e7e266",
+                                "type": "Text Input",
+                                "x": 20,
+                                "y": 568,
+                                "parameters": {
+                                    "startValue": "AbC",
+                                    "fontFamily": "Arial",
+                                    "fontSize": {
+                                        "value": 32,
+                                        "unit": "px"
+                                    }
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "b6f27990-1d8b-14fd-d038-397a7f94a2a0",
+                                "type": "Text",
+                                "x": 20,
+                                "y": 650,
+                                "parameters": {
+                                    "marginTop": {
+                                        "value": 30,
+                                        "unit": "px"
+                                    }
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "e319f7ba-b70f-9a61-2387-8ba11112dc29",
+                        "type": "Javascript2",
+                        "x": 198.20900004672546,
+                        "y": 556.6204618762947,
+                        "parameters": {
+                            "code": "define({\n\t// The input ports of the Javascript node, name of input and type\n\tinputs:{\n\t    // ExampleInput:'number',\n\t    // Available types are 'number', 'string', 'boolean', 'color' and 'signal',\n\t    connect:'signal',\n\t    disconnect:'signal',\n\t    mySignal:\"signal\",\n\t    msg:\"string\"\n\t},\n\t\n\t// The output ports of the Javascript node, name of output and type\n\toutputs:{\n\t    // ExampleOutput:'string',\n        btn:\"string\"\n\t},\n\t\n\t// All signal inputs need their own function with the corresponding name that\n\t// will be run when a signal is received on the input.\n\tmySignal:function(inputs,outputs) {\n\t\t// ...\n\t},\n\t\n\t// This function will be called when any of the inputs have changed\n\tchange:function(inputs,outputs) {\n\t\tif(inputs.connect){\n\t\t    connect();\n\t\t}\n\t   \n\t\tif(inputs.disconnect){\n\t\t    disconnect();\n\t\t}\n\t\t\n\t\tif(inputs.mySignal){\n            pingButtonPressed(inputs.msg);\n\t\t}\n\t\t\n\t\tthis.runNextFrame();\n\t\toutputs.btn = btn;\n\t    this.flagOutputDirty(\"btn\");\n\t\t\n\t}\n})\n\nconst UART_SERVICE_UUID = \"6e400001-b5a3-f393-e0a9-e50e24dcca9e\";\n\n// Allows the micro:bit to transmit a byte array\nconst UART_TX_CHARACTERISTIC_UUID = \"6e400002-b5a3-f393-e0a9-e50e24dcca9e\";\n\n// Allows a connected client to send a byte array\nconst UART_RX_CHARACTERISTIC_UUID = \"6e400003-b5a3-f393-e0a9-e50e24dcca9e\";\n\nvar btn;\nlet uBitDevice;\nlet rxCharacteristic;\n\nasync function connect() {\n  try {\n    console.log(\"Requesting Bluetooth Device...\");\n    uBitDevice = await navigator.bluetooth.requestDevice({\n      filters: [{ namePrefix: \"BBC micro:bit\" }],\n      optionalServices: [UART_SERVICE_UUID]\n    });\n\n    console.log(\"Connecting to GATT Server...\");\n    const server = await uBitDevice.gatt.connect();\n\n    console.log(\"Getting Service...\");\n    const service = await server.getPrimaryService(UART_SERVICE_UUID);\n\n    console.log(\"Getting Characteristics...\");\n    const txCharacteristic = await service.getCharacteristic(\n      UART_TX_CHARACTERISTIC_UUID\n    );\n    txCharacteristic.startNotifications();\n    txCharacteristic.addEventListener(\n      \"characteristicvaluechanged\",\n      onTxCharacteristicValueChanged\n    );\n    rxCharacteristic = await service.getCharacteristic(\n      UART_RX_CHARACTERISTIC_UUID\n    );\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nfunction disconnect() {\n  if (!uBitDevice) {\n    return;\n  }\n\n  if (uBitDevice.gatt.connected) {\n    uBitDevice.gatt.disconnect();\n    console.log(\"Disconnected\");\n  }\n}\n\nasync function pingButtonPressed(msg) {\n  if (!rxCharacteristic) {\n    return;\n  }\n\n  try {\n    let encoder = new TextEncoder();\n    rxCharacteristic.writeValue(encoder.encode(msg +\"\\n\"));\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nfunction onTxCharacteristicValueChanged(event) {\n  let receivedData = [];\n  for (var i = 0; i < event.target.value.byteLength; i++) {\n    receivedData[i] = event.target.value.getUint8(i);\n  }\n\n  const receivedString = String.fromCharCode.apply(null, receivedData);\n  console.log(receivedString);\n  if (receivedString === \"A\") {\n    console.log(\"Aだよ\");\n    btn = \"Aだよ\";\n  }else if(receivedString === \"B\"){\n    console.log(\"Bだよ\");\n    btn = \"Bだよ\";\n  }\n}\n\n",
+                            "useExternalFile": "no"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "connect",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 2
+                            },
+                            {
+                                "name": "disconnect",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 3
+                            },
+                            {
+                                "name": "mySignal",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 4
+                            },
+                            {
+                                "name": "msg",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 5
+                            },
+                            {
+                                "name": "btn",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 6
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {},
+    "rootNodeId": "ffd194ce-fd17-f911-30f4-d64877c83423",
+    "version": "1",
+    "metadata": {
+        "deviceSettings": {
+            "deviceTypes": [
+                {
+                    "name": "Acc",
+                    "desc": "加速度取得",
+                    "rootComponentPath": "/AccTest",
+                    "type": "Browser"
+                },
+                {
+                    "name": "UART",
+                    "desc": "",
+                    "rootComponentPath": "/UARTtest",
+                    "type": "Browser"
+                }
+            ]
+        }
+    }
+}
